@@ -155,11 +155,11 @@ body {
 }
 /*section-adge*/
 .invisible-title {
-  visibility: hidden;
-  margin-top: 0;
-  margin-bottom: 0;
-  width: 0;
-  height: 0;
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 .adge-flex {
   display: flex;
