@@ -113,11 +113,34 @@ body {
 }
 /*contacts-header*/
 .contacts-link {
+  display: inline-flex;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-color);
+  cursor: pointer;
+}
+.contacts-icon {
+  fill: var(--main-color);
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
+.smartphone-icon {
+  fill: var(--main-color);
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+}
+.contacts-link:hover .contacts-icon,
+.contacts-link:focus .contacts-icon {
+  fill: var(--select-color);
+}
+.contacts-link:focus .smartphone-icon,
+.contacts-link:hover .smartphone-icon {
+  fill: var(--select-color);
 }
 .section {
   padding-top: 94px;
@@ -170,6 +193,34 @@ body {
 .adge-item:last-child {
   margin-right: 0;
 }
+.icon-background {
+  width: 270px;
+  height: 120px;
+  background-color: var(--section-team-background);
+  padding: 25px 102px;
+  margin-bottom: 30px;
+}
+.icon-antenna {
+  width: 66px;
+  height: 70px;
+  background-size: cover;
+}
+.icon-clock {
+  width: 66px;
+  height: 70px;
+  background-size: cover;
+}
+.icon-diagram {
+  width: 70px;
+  height: 54px;
+  background-size: cover;
+}
+.icon-astronaut {
+  width: 70px;
+  height: 70px;
+  background-size: cover;
+}
+
 .adge-subtitle {
   font-weight: 700;
   font-size: 14px;
@@ -307,6 +358,7 @@ img {
 .filter-btn {
   background-color: #f5f4fa;
   border-radius: 4px;
+  border: transparent;
   font-family: inherit;
   font-style: normal;
   font-weight: 500;
